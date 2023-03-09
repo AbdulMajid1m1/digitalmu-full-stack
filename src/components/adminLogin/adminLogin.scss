@@ -1,0 +1,200 @@
+.admin-login-container {
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .close-btn {
+      font-size: 1.2rem;
+      margin-right: 10px;
+      cursor: pointer;
+      color: rgba(1, 156, 78, 255);
+    }
+  }
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    img {
+      width: 250px;
+      object-fit: cover;
+      height: 70px;
+    }
+  }
+
+  .exchange-contact-wrapper {
+    position: relative;
+    margin-top: 30px;
+    min-height: 300px;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    .exchange-contact-top-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      .exchange-contact-top-div-text {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .exchange-contact-top-div-close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        .exchange-contact-top-close-btn {
+          font-size: 2rem;
+        }
+      }
+    }
+    .exchange-contact-middle-div {
+      width: 80%;
+      font-size: 1.5rem;
+      margin: auto;
+      text-align: center;
+    }
+    .input-wrapper {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      padding-bottom: 20px;
+      span {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        input {
+          width: 90%;
+          height: 40px;
+          border: none;
+          outline: none;
+
+          font-size: 1.2rem;
+          margin-top: 10px;
+          // margin-bottom: 10px;
+        }
+        .person-icon {
+          margin-top: 10px;
+          color: black;
+          font-size: 1.3rem;
+          cursor: pointer;
+          margin-right: 15px;
+        }
+      }
+
+      input {
+        width: 90%;
+        height: 40px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        // margin-bottom: 10px;
+      }
+      .input-icon {
+        margin-top: 10px;
+        color: black;
+        margin-right: 15px;
+      }
+      .person-icon {
+        font-size: 1.7rem;
+      }
+    }
+    .bottom-container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 30px;
+      p {
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+        cursor: pointer;
+        color: red;
+      }
+      button {
+        cursor: pointer;
+        width: 60%;
+        height: 50px;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: auto;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+// make it responsive for mobile and tablet
+
+@media only screen and (max-width: 768px) {
+  .admin-login-container {
+    .exchange-contact-wrapper {
+      width: 90%;
+      .exchange-contact-top-div {
+        .exchange-contact-top-div-text {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+      .exchange-contact-middle-div {
+        font-size: 1.2rem;
+        margin-top: 5px;
+      }
+      .input-wrapper {
+        span {
+          width: 80%;
+          input {
+            width: 80%;
+            height: 30px;
+            font-size: 1rem;
+          }
+          .person-icon {
+            font-size: 1.2rem;
+          }
+        }
+        input {
+          width: 80%;
+          height: 30px;
+          font-size: 1rem;
+        }
+        .input-icon {
+          margin-right: 10px;
+          .person-icon {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .bottom-container {
+        p {
+          font-size: 1rem;
+        }
+        button {
+          width: 70%;
+          height: 40px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

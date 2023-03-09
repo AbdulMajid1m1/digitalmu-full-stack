@@ -1,0 +1,399 @@
+.single-user-container {
+  height: 80px;
+
+  min-height: 100vh;
+  height: auto;
+  max-height: auto;
+  position: relative;
+  .backGroundImgcontainer {
+    display: none;
+    img {
+      display: none;
+    }
+  }
+
+  .user-top-container {
+    border-bottom: 1px solid rgb(128, 128, 128, 0.5);
+    display: flex;
+    // use the variable
+    padding: 15px;
+    border-bottom: none;
+
+    margin-top: 5px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    .next-icon {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      object-fit: contain;
+    }
+    .back-icon {
+      cursor: pointer;
+      color: white;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .single-user-data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+
+    .user-profile-container {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      border: 4px solid #009c4d;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .single-user-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+    .user-name-and-title {
+      margin-top: 20px;
+    }
+    .user-name-and-title h1 {
+      font-weight: normal;
+      // use the inter font family
+      font-family: "Inter", sans-serif;
+      font-size: 3rem;
+    }
+    .user-name-and-title h3 {
+      font-weight: normal;
+      font-family: "poppins", sans-serif;
+
+      font-size: 2rem;
+    }
+
+    .save-btn-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .save-btn {
+      cursor: pointer;
+      width: 98%;
+      height: 40px;
+      border: none;
+      outline: none;
+      background-color: #0000ff;
+      // box shadow
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: auto;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    .digitalmu-btn-container {
+      width: 100%;
+      margin-top: 10px;
+      .btnBackground {
+        display: none;
+        img {
+          display: none;
+        }
+      }
+    }
+    .digitalmu-btn {
+      width: 98%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      height: 40px;
+      border: none;
+      outline: none;
+      background-color: #0000ff;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: auto;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+  .logo-and-text-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+    max-width: 80vw;
+    margin-top: 20px;
+    min-width: 50vw;
+
+    .logo img {
+      width: 130px;
+      object-fit: contain;
+      height: 80px;
+    }
+  }
+
+  .media-icons-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    img {
+      width: 40px;
+      cursor: pointer;
+      height: 40px;
+    }
+  }
+  .logo-right-text p {
+    font-family: "Franklin Gothic", sans-serif;
+    font-weight: bold;
+  }
+  .logo-text {
+    font-weight: bold;
+    font-family: "Port Lligat Sans", sans-serif;
+  }
+  .bottom-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    .bottom-logo img {
+      width: 200px;
+      height: 60px;
+      object-fit: cover;
+    }
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // gap: 40px;
+    width: 100%;
+  }
+  .left-footer-div {
+    // width: 100px;
+    height: 0;
+    border-bottom: 55px solid red;
+    // border-left: 25px solid transparent;
+    border-right: 40px solid transparent;
+    // transform: skewX(0deg);
+    width: 63%;
+  }
+  .right-footer-div {
+    width: 30%;
+    height: 0;
+    border-bottom: 55px solid #0000ff;
+    transform: rotate(180deg);
+    border-right: 40px solid transparent;
+  }
+  .user-top-left-icon {
+    width: 35px;
+    height: 35px;
+    background: black;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// reponsive css for single user page on 500px
+@media screen and (max-width: 768px) {
+  .single-user-container {
+    .backGroundImgcontainer {
+      width: 100%;
+      // height: calc(30vh - 45px);
+      height: 16vh;
+      position: absolute;
+      bottom: 45px;
+      left: 0;
+      display: block;
+      z-index: -1;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .single-user-container {
+    padding-bottom: 0;
+    .user-top-container {
+      padding: 15px;
+      border-bottom: none;
+      // .next-icon {
+      //   width: 20px;
+      //   height: 20px;
+      // }
+    }
+    .logo-right-text p {
+      font-size: 14px;
+    }
+    .single-user-data-container {
+      .digitalmu-btn-container {
+        margin-bottom: 20px;
+        position: relative;
+
+        .btnBackground {
+          width: 100%;
+          height: 5vh;
+          display: block;
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          // background: #0000ff;
+          border-radius: 20px;
+          z-index: -1;
+          img {
+            width: 100%;
+            display: block;
+            object-fit: contain;
+          }
+        }
+      }
+      .user-profile-container {
+        width: 110px;
+        height: 110px;
+      }
+      .user-name-and-title h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .user-name-and-title h3 {
+        font-size: 20px;
+      }
+      .save-btn {
+        width: 85%;
+        font-size: 20px;
+      }
+      .digitalmu-btn {
+        width: 85%;
+        font-size: 20px;
+      }
+    }
+    .logo-and-text-container {
+      max-width: 90vw;
+      .logo img {
+        width: 100px;
+        height: 60px;
+      }
+    }
+
+    .media-icons-container {
+      display: flex;
+      margin-top: 15px;
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+      img {
+        width: 35px;
+        cursor: pointer;
+        height: 35px;
+      }
+    }
+    .bottom-logo-container {
+      position: relative;
+      // bottom: 11.5vh;
+      .bottom-logo img {
+        width: 165px;
+        height: 50px;
+      }
+    }
+    .footer {
+      margin-top: 40px;
+    }
+    .left-footer-div {
+      border-bottom: 45px solid red;
+      border-right: 25px solid transparent;
+      width: 80%;
+    }
+    .right-footer-div {
+      width: 13%;
+      border-bottom: 45px solid #009c4d;
+      transform: rotate(180deg);
+      border-right: 25px solid transparent;
+    }
+  }
+}
+@media only screen and (min-height: 540px) {
+  /* Styles for devices with similar height to Huawei Mate 10 Lite */
+  .single-user-container {
+    .backGroundImgcontainer {
+      width: 100%;
+      height: 17vh;
+      position: absolute;
+      bottom: 45px;
+    }
+  }
+}
+@media only screen and (min-height: 600px) {
+  /* Styles for devices with similar height to Huawei Mate 10 Lite */
+  .single-user-container {
+    .backGroundImgcontainer {
+      width: 100%;
+      height: 27vh;
+      position: absolute;
+      bottom: 45px;
+    }
+  }
+}
+@media only screen and (min-height: 700px) {
+  /* Styles for devices with similar height to Huawei Mate 10 Lite */
+  .single-user-container {
+    .backGroundImgcontainer {
+      width: 100%;
+      height: 28vh;
+      position: absolute;
+      bottom: 45px;
+    }
+  }
+}
+
+@media only screen and (min-height: 844px) {
+  /* Styles for devices with similar height to iPhone 12 Pro Max */
+  .single-user-container {
+    .backGroundImgcontainer {
+      width: 100%;
+      height: 35vh;
+      position: absolute;
+      bottom: 45px;
+    }
+  }
+}
+@media only screen and (min-height: 900px) {
+  /* Styles for devices with similar height to iPhone 12 Pro Max */
+  .single-user-container {
+    .backGroundImgcontainer {
+      width: 100%;
+      height: 38vh;
+      position: absolute;
+      bottom: 45px;
+    }
+  }
+}

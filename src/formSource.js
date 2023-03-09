@@ -1,0 +1,96 @@
+export const userInputs = [
+
+  {
+    id: 1,
+    label: "Name*",
+    name: "name",
+    type: "text",
+    placeholder: "Full Name Here",
+  },
+  {
+    id: 2,
+    name: "email",
+    label: "Email*",
+    type: "email",
+    placeholder: "Email Here",
+  },
+  {
+    id: 3,
+    label: "Phone Number*",
+    name: "phone",
+    type: "number",
+    placeholder: "e.g 08012345678",
+  },
+  {
+    id: 4,
+    name: "company",
+    label: "Company*",
+    type: "text",
+    placeholder: "e.g Apple",
+  },
+
+  {
+    id: 6,
+    name: "address",
+    label: "Address*",
+    type: "text",
+    placeholder: "e.g 123, Lagos, Nigeria",
+  },
+  {
+    id: 7,
+    name: "digitalmuUrl",
+    label: "Digitalmu Url",
+    type: "text",
+    placeholder: "e.g https://digitalmu.com",
+  },
+  {
+    id: 8,
+    name: "designation",
+    label: "Designation*",
+    type: "text",
+    placeholder: "e.g CEO",
+  },
+  {
+    id: 9,
+    name: "selectedColor",
+    label: "Selected Color",
+    type: "color",
+    placeholder: "e.g #000000",
+  },
+  {
+    id: 14,
+    name: "status",
+    label: "Status",
+    type: "text",
+    placeholder: "e.g Active or Inactive",
+  },
+  {
+    id: 10,
+    name: "facebookUrl",
+    label: "Facebook Url",
+    type: "text",
+    placeholder: "e.g https://facebook.com",
+  },
+  {
+    id: 11,
+    name: "twitterUrl",
+    label: "Twitter Url",
+    type: "text",
+    placeholder: "e.g https://twitter.com",
+  },
+  {
+    id: 12,
+    name: "tiktokUrl",
+    label: "Tiktok Url",
+    type: "text",
+    placeholder: "e.g https://tiktok.com",
+  },
+  {
+    id: 13,
+    name: "youtubeUrl",
+    label: "Youtube Url",
+    type: "text",
+    placeholder: "e.g https://youtube.com",
+  },
+
+];

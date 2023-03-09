@@ -1,0 +1,237 @@
+.updateUser {
+  width: 100%;
+  display: flex;
+  .img-circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .newContainer {
+    flex: 6;
+
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+
+      h1 {
+        color: lightgray;
+        font-size: 20px;
+      }
+
+      .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+
+      .right {
+        flex: 2;
+
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          justify-content: space-around;
+
+          .formInput {
+            width: 40%;
+
+            label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+
+            input {
+              color: gray;
+              width: 100%;
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+
+          button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.loading-spinner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.userColor {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  // remove this black border around the modal
+  border: none !important;
+  outline: none;
+  transition: all 0.3s ease;
+
+  width: 85%;
+  height: 85%;
+  // background-color: rgba(206, 206, 206, 0.66);
+  .close-btn {
+    top: -32px;
+    right: 86px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    // color of theme for close button
+    color: rgb(111, 111, 111);
+    position: absolute;
+  }
+  .img-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+
+    // &:hover {
+    //   transform: scale(1.01);
+    // }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #008080;
+    }
+  }
+}
+
+.statusInput {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  gap: 20px;
+  align-items: left;
+  justify-content: left;
+  // margin-top: 20px;
+  .status {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    .icon {
+      cursor: pointer;
+    }
+  }
+  .rodioDiv {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  label {
+    cursor: pointer;
+  }
+}
+// modal responsive 500px for mobile
+@media screen and (max-width: 760px) {
+  .Modal {
+    width: 100%;
+    height: 40%;
+    .close-btn {
+      top: -32px;
+      right: 10px;
+    }
+  }
+
+  .img-span {
+    width: 100%;
+    height: 100%;
+    // make the image responsive
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
